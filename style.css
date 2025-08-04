@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+}
+
+.btn-arrondi {
+    border: 3px solid white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: #FFF;
+    text-decoration: none;
+    float: right;
+}
+.btn-arrondi:hover {
+    background-color: #FFF;
+    color: #354794;
+}
+
+
+
+/*****************************************
+
+                MENU
+
+******************************************/
+#menu {
+    border-bottom: 1px solid #333;
+    background: linear-gradient(#eeeef0, #f0d0d0);
+}
+#container_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.liens_menu ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+}
+
+.liens_menu ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+.liens_menu ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+/*****************************************
+
+                BANNIERE
+
+******************************************/
+
+
+.banniere {
+    background-color: #354794;
+    margin: 15px auto;
+}
+.banniere img {
+    cursor: pointer;
+}
+.banniere .contenu {
+    color: #FFF;
+    font-size: 20px;
+    padding: 20px;
+    max-width: 360px;
+}
+.banniere h1 {
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 5px 5px #05113140;
+    font-size: 50px;
+    text-align: center;
+}
+.banniere h2 {
+    text-shadow: 5px 5px #05113140;
+    font-style: italic;
+}
+.banniere p {
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.modal-dialog {
+    max-width: 1280px !important;
+}
+.modal-dialog img {
+    width: 100%;
+}
+
+
+/***********************************
+
+            BANDEAU
+
+************************************/
+
+.bandeau {
+    height: 300px;
+    background-image: url('images/bandeau.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+/***********************************
+
+            CONTACT
+
+************************************/
+.contact {
+    background-image: url('images/hands.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%, center;
+    height: 550px;
+}
+.contact #background_opaque {
+    background: #d1d1d163;
+    border-radius: 15px;
+    padding: 80px 30px;
+}
+.contact #question {
+    color: #FFF;
+}
+.contact #question h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    text-shadow: 2px 2px #333;
+    margin-bottom: 15px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .contact #question h2 {
+        font-size: 45px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .contact {
+        height: 450px;
+    }
+    .contact #question h2 {
+        font-size: 60px;
+    }
+}
+
+
+
+/***********************************
+
+            FOOTER
+
+************************************/
+
+footer {
+    background-color: #354794;
+    color: #FFF;
+}
+footer a{
+    text-decoration: none;
+    color: #FFF;
+}
