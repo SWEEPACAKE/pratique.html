@@ -168,3 +168,35 @@ footer a{
     text-decoration: none;
     color: #FFF;
 }
+
+
+
+
+
+/********************************
+
+
+    Page QUI SOMMES-NOUS
+
+
+********************************/
+
+#partager {
+    font-size: 22px;
+}
+#partager i {
+    color: #354794;
+    margin: 0 5px;
+}
+
+#photo_moulins {
+    width: 300px;
+    margin: 0 auto 15px;
+    display: block;
+}
+@media screen and (min-width: 576px){
+    #photo_moulins {
+        margin: 0 0 10px 15px;
+        float: right;
+    } 
+}
