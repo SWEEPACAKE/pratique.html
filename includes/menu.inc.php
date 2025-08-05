@@ -19,7 +19,7 @@
                             <a class="nav-link text-end text-lg-start" href="faq.php">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-end text-lg-start" href="#">Contact</a>
+                            <a class="nav-link text-end text-lg-start" href="contact.php">Contact</a>
                         </li>
                     </ul>
                 </div>

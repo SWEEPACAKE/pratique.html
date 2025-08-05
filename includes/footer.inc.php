@@ -10,7 +10,7 @@
                         <a href="faq.php">FAQ</a>
                     </li>
                     <li class="my-2">
-                        <a href="#">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </li>
                 </ul>
             </div>

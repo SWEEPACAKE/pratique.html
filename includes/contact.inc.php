@@ -6,7 +6,7 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid suscipit nulla ullam obcaecati illo incidunt.</p>
             </div>
             <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center" id="bouton_contact">
-                <a href="#" class="btn-arrondi">Nous contacter</a>
+                <a href="contact.php" class="btn-arrondi">Nous contacter</a>
             </div>
         </div>
     </div>
