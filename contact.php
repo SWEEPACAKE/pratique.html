@@ -22,59 +22,75 @@
         }
         ?>
         <div class="container py-4">
-            <form method="POST" action="contact.php">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <form method="POST" action="contact.php">
 
-                <!-- INPUT DE TYPES TEXTES -->
+                        <!-- INPUT DE TYPES TEXTES -->
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="nom">Nom</label>
+                                    <input class="form-control" type="text" name="nom" placeholder="Nom" maxlength="10"/>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="prenom">Prénom</label>
+                                    <input class="form-control" type="text" name="prenom" placeholder="Prénom" maxlength="10"/>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <input type="number" name="age" min="0" max="20" placeholder="Âge"/>
+                        <br><br>
+                        <input type="password" name="password" placeholder="Mot de passe" minlength="10"/>
+                        <input type="email" name="email" placeholder="E-mail"/>
+                        <br><br>
+                        <textarea name="mon_texte" rows="6" cols="50"></textarea>
+                        <br><br>
+                        <!-- INPUT DE TYPES SELECTION -->
+                        <select name="departement">
+                            <option value="">Choisissez votre département</option>
+                            <option value="42">Loire</option>
+                            <option value="03">Allier</option>
+                            <option value="63">Puy-de-Dôme</option>
+                            <option value="43">Haute-Loire</option>
+                            <option value="23">Creuse</option>
+                            <option value="38">Isère</option>
+                        </select>
 
-                <input type="text" name="nom" placeholder="Nom" maxlength="10"/>
-                <input type="text" name="prenom" placeholder="Prénom"/>
-                <input type="number" name="age" min="0" max="20" placeholder="Âge"/>
-                <br><br>
-                <input type="password" name="password" placeholder="Mot de passe" minlength="10"/>
-                <input type="email" name="email" placeholder="E-mail"/>
-                <br><br>
-                <textarea name="mon_texte" rows="6" cols="50"></textarea>
-                <br><br>
-                <!-- INPUT DE TYPES SELECTION -->
-                <select name="departement">
-                    <option value="">Choisissez votre département</option>
-                    <option value="42">Loire</option>
-                    <option value="03">Allier</option>
-                    <option value="63">Puy-de-Dôme</option>
-                    <option value="43">Haute-Loire</option>
-                    <option value="23">Creuse</option>
-                    <option value="38">Isère</option>
-                </select>
+                        <br><br>
 
-                <br><br>
-
-                Sexe : <br>
-                <input type="radio" name="sexe" value="H">
-                <label for="H">Homme</label><br>
-                <input type="radio" name="sexe" value="F">
-                <label for="F">Femme</label><br>
-                
-                Comment êtes-vous habillés ? : <br>
-                <input type="checkbox" name="habits[]" value="Chemise">
-                <label for="Chemise">Chemise</label><br>
-                <input type="checkbox" name="habits[]" value="Pantalon">
-                <label for="Pantalon">Pantalon</label><br>
-                <input type="checkbox" name="habits[]" value="Chaussettes">
-                <label for="Chaussettes">Chaussettes</label><br>
-                <input type="checkbox" name="habits[]" value="Chaussures">
-                <label for="Chaussures">Chaussures</label><br>
-                <input type="checkbox" name="habits[]" value="T-shirt">
-                <label for="T-shirt">T-shirt</label><br>
-                <input type="checkbox" name="habits[]" value="Short">
-                <label for="Short">Short</label><br>
-                <input type="checkbox" name="habits[]" value="Jupe">
-                <label for="Jupe">Jupe</label><br>
-                <input type="checkbox" name="habits[]" value="Robe">
-                <label for="Robe">Robe</label><br>
+                        Sexe : <br>
+                        <input type="radio" name="sexe" value="H">
+                        <label for="H">Homme</label><br>
+                        <input type="radio" name="sexe" value="F">
+                        <label for="F">Femme</label><br>
+                        
+                        Comment êtes-vous habillés ? : <br>
+                        <input type="checkbox" name="habits[]" value="Chemise">
+                        <label for="Chemise">Chemise</label><br>
+                        <input type="checkbox" name="habits[]" value="Pantalon">
+                        <label for="Pantalon">Pantalon</label><br>
+                        <input type="checkbox" name="habits[]" value="Chaussettes">
+                        <label for="Chaussettes">Chaussettes</label><br>
+                        <input type="checkbox" name="habits[]" value="Chaussures">
+                        <label for="Chaussures">Chaussures</label><br>
+                        <input type="checkbox" name="habits[]" value="T-shirt">
+                        <label for="T-shirt">T-shirt</label><br>
+                        <input type="checkbox" name="habits[]" value="Short">
+                        <label for="Short">Short</label><br>
+                        <input type="checkbox" name="habits[]" value="Jupe">
+                        <label for="Jupe">Jupe</label><br>
+                        <input type="checkbox" name="habits[]" value="Robe">
+                        <label for="Robe">Robe</label><br>
 
 
-                <button type="submit">Envoyer</button>
-            </form>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
         </div>
         <?php
         include ('includes/bandeau.inc.php');
